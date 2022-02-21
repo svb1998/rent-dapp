@@ -1,0 +1,24 @@
+.searcher-container{
+    background-color: var(--primary);
+    width: 650px;
+    height: 60px;
+    padding: 7px;
+    border-radius: 50px;
+}
+
+#tf_product{
+    width: 100%;
+    height: 100%;
+    
+    padding-left: 2.5em;
+    
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-image: url('../../../assets/icons/search-icon.svg');
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 0.75em center;
+
+}

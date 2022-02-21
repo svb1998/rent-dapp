@@ -1,0 +1,186 @@
+.product-card{
+    
+    border-radius: 15px;
+    width: 260px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid rgba(0, 0, 0, 0.267);
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        
+        transform: scale(1.05);
+
+            .product-data{
+                display: flex;
+            }
+
+          
+            .product-feature-container{
+                display: none;
+            }
+            
+        
+       
+    }
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.411);
+
+    cursor: pointer;
+}
+
+.product-image{
+    // background-image: url(https://images.pexels.com/photos/2885014/pexels-photo-2885014.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    // background-image: url(https://images.pexels.com/photos/4536850/pexels-photo-4536850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-image: url(https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-description{
+    
+    padding: 12px;
+    height: 45%;
+    line-height: 1.2;
+    background: linear-gradient(to bottom, #ffffff, rgba(247, 244, 253, 0.973));
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 0.5px solid rgba(25, 3, 54, 0.26);
+    
+   
+    .product-title{
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--primary);
+        margin-bottom: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .product-price{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+}
+
+
+
+
+
+.product-data{
+    
+    border-radius: 12px;
+    height: 85px;
+   
+
+    padding: 8px;
+    
+    row-gap: 5px;
+    column-gap: 90px;
+
+    
+
+    display: grid;
+    grid-template-areas: "fianza max"
+                "estado estado";
+    
+    .fianza{
+        grid-area: fianza;
+
+    }
+
+    .max{
+        grid-area: max;
+    }
+
+    .estado{
+        grid-area: estado;
+        
+    
+    }
+    
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+
+.product-feature-container{
+
+    
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+
+    p{
+        letter-spacing: 0.3px;
+        font-size: 14px;
+        
+    }
+    
+}
+
+.product-feature{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.description{
+    //margin-top: 5px;
+    display: -webkit-box;
+    width: 100%;
+    font-size: 0.83rem;
+    line-height: 1.275;
+   
+    
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+    position: relative;
+   word-wrap: break-word;
+   
+    
+    color: rgba(0, 0, 0, 0.801);
+    
+    height: 100%;
+    
+}  
+
+.fav-button{
+    padding: 8px;
+    position: relative;
+    top: 4%;
+    left: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    outline: none;
+    border: 1px solid rgb(27, 7, 63);
+    transition: 0.1s ease-in-out;
+    
+
+    &:hover{
+        transform: scale(1.06) rotateZ(30deg);
+        border: 1.5px solid rgb(27, 7, 63);
+        box-shadow: 0px 1px 4px 0px black;
+        
+    }
+    cursor: pointer;
+}
+
+.fav-icon{
+    
+    height: 20px;
+    width: 20px;
+}
